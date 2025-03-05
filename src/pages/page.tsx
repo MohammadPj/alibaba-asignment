@@ -5,6 +5,10 @@ const HomePage = () => {
     <div>
       home page
 
+      <div className={'bg-red-500'}>
+        salam
+      </div>
+
       <Link to={"/contact"}>contact</Link>
       <Link to={"/about"}>about</Link>
     </div>
