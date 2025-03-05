@@ -10,7 +10,7 @@ const HomePage = () => {
       </div>
 
       <Link to={"/contact"}>contact</Link>
-      <Link to={"/about"}>about</Link>
+      <Link to={"/123"}>detail</Link>
     </div>
   );
 };

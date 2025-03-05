@@ -5,8 +5,7 @@ import { lazy, Suspense } from "react";
 import LoadingComponent from "./components/loading-components/LoadingComponent.tsx";
 
 const HomePage = lazy(() => import("./pages/page.tsx"));
-const AboutPage = lazy(() => import("./pages/about/page.tsx"));
-const ContactPage = lazy(() => import("./pages/contact/page.tsx"));
+const HotelDetailPage = lazy(() => import("./pages/[hotel-id]/page.tsx"));
 const NotFoundPage = lazy(() => import("./pages/not-found/page.tsx"));
 
 function App() {
@@ -22,19 +21,10 @@ function App() {
       />
 
       <Route
-        path={"/about"}
+        path={"/:hotel-id"}
         element={
           <Suspense fallback={<LoadingComponent />}>
-            <AboutPage />
-          </Suspense>
-        }
-      />
-
-      <Route
-        path={"/contact"}
-        element={
-          <Suspense fallback={<LoadingComponent />}>
-            <ContactPage />
+            <HotelDetailPage />
           </Suspense>
         }
       />
