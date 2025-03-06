@@ -1,15 +1,11 @@
-import {Link, useParams} from "react-router-dom";
+import HotelDetailPresenter from "../../features/hotel-detail/HotelDetailPresenter.tsx";
 
 const HotelDetailPage = () => {
-  const params = useParams()
-
-  console.log('params', params)
 
   return (
-    <div>
-      <p>hotel detail</p>
-      <Link to={"/"}>home page</Link>
-    </div>
+    <>
+      <HotelDetailPresenter />
+    </>
   );
 };
 
