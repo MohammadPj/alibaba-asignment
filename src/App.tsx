@@ -1,4 +1,4 @@
-import "./index.css";
+import "./assets/styles/global.css"
 import { Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import LoadingComponent from "./components/loading-components/LoadingComponent.tsx";
@@ -11,7 +11,6 @@ const NotFoundPage = lazy(() => import("./pages/not-found/page.tsx"));
 function App() {
   return (
     <Routes>
-      {/* مسیرهایی که Layout دارند */}
       <Route path="/" element={<MainLayout />}>
         <Route
           index
@@ -31,7 +30,6 @@ function App() {
         />
       </Route>
 
-      {/* مسیرهای بدون Layout */}
       <Route
         path="*"
         element={

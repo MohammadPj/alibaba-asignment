@@ -1,0 +1,6 @@
+@import "./theme.css";
+@import "./fonts.css";
+
+body {
+    direction: rtl;
+}
