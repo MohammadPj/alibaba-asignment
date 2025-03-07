@@ -25,7 +25,7 @@ const HotelCard: FC<HotelCardProps> = ({ hotel }) => {
       </div>
 
       <div className={"flex flex-col p-6 justify-between grow"}>
-        <Link to={"#"}>
+        <Link to={`/${hotel.id}`}>
           <h6 className={"font-bold"}> هتل {hotel.name}</h6>
         </Link>
 
