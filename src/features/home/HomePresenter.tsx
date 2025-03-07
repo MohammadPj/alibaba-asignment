@@ -1,8 +1,10 @@
-import { FC } from "react";
-import HotelList from "./components/HotelList.tsx";
+import { FC, lazy, Suspense } from "react";
 import TextField from "../../components/input/TextField.tsx";
-import { debounce } from "../../utils/helpers.ts";
+import { debounce } from "~/utils/helpers.ts";
 import { useSearchParams } from "react-router-dom";
+import LoadingComponent from "~/components/loading-components/LoadingComponent.tsx";
+
+const HotelList = lazy(() => import("./components/HotelList.tsx"));
 
 const HomePresenter: FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -35,7 +37,9 @@ const HomePresenter: FC = () => {
         </div>
       </div>
 
-      <HotelList />
+      <Suspense fallback={<LoadingComponent />}>
+        <HotelList />
+      </Suspense>
     </div>
   );
 };
