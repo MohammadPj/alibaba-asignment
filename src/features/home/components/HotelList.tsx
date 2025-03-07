@@ -13,7 +13,7 @@ const HotelList: FC = () => {
     () =>
       search
         ? hotels?.filter(
-            (hotel) => hotel?.name?.toLowerCase()?.search(search) > -1,
+            (hotel) => hotel?.name?.toLowerCase()?.search(search) > -1 || hotel?.description?.toLowerCase()?.search(search) > -1,
           )
         : hotels,
     [search, hotels],
