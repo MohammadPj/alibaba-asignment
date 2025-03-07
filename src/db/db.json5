@@ -12,7 +12,7 @@
       "name": "Espinas Palace",
       "description": "Espinas Palace Hotel is a luxurious five-star hotel located in the north of Tehran...",
       "location": {
-        "long": 51.3611,
+        "lng": 51.3611,
         "lat": 35.7675
       },
       "stars": 5
@@ -21,7 +21,7 @@
       "name": "Parsian Azadi",
       "description": "Parsian Azadi Hotel is one of the most modern and well-equipped hotels in Tehran...",
       "location": {
-        "long": 51.3925,
+        "lng": 51.3925,
         "lat": 35.8022
       },
       "stars": 5
@@ -30,7 +30,7 @@
       "name": "Homa",
       "description": "Tehran Homa Hotel, one of the most prestigious five-star hotels in the capital...",
       "location": {
-        "long": 51.4035,
+        "lng": 51.4035,
         "lat": 35.7319
       },
       "stars": 5
@@ -39,7 +39,7 @@
       "name": "Ferdowsi Grand Hotel",
       "description": "Ferdowsi Grand Hotel is a four-star hotel located in the heart of Tehran, close to historical sites...",
       "location": {
-        "long": 51.4172,
+        "lng": 51.4172,
         "lat": 35.6895
       },
       "stars": 4
@@ -48,7 +48,7 @@
       "name": "Howeyzeh Hotel",
       "description": "Howeyzeh Hotel is a comfortable four-star hotel with easy access to Tehran's main attractions...",
       "location": {
-        "long": 51.4175,
+        "lng": 51.4175,
         "lat": 35.7001
       },
       "stars": 4
@@ -57,7 +57,7 @@
       "name": "Parsian Enghelab Hotel",
       "description": "Parsian Enghelab Hotel is a four-star hotel located in the heart of Tehran's commercial and political district...",
       "location": {
-        "long": 51.4097,
+        "lng": 51.4097,
         "lat": 35.7105
       },
       "stars": 4
@@ -66,7 +66,7 @@
       "name": "Parsian Esteghlal Hotel",
       "description": "Parsian Esteghlal Hotel is one of the largest five-star hotels in Tehran, featuring modern amenities...",
       "location": {
-        "long": 51.4236,
+        "lng": 51.4236,
         "lat": 35.7862
       },
       "stars": 5
@@ -75,7 +75,7 @@
       "name": "Niloo Hotel",
       "description": "Niloo Hotel is a boutique hotel in Tehran, offering a cozy and luxurious stay...",
       "location": {
-        "long": 51.4184,
+        "lng": 51.4184,
         "lat": 35.7609
       },
       "stars": 3
@@ -84,7 +84,7 @@
       "name": "Tehran Grand Hotel",
       "description": "Tehran Grand Hotel is a four-star hotel known for its central location and excellent service...",
       "location": {
-        "long": 51.4123,
+        "lng": 51.4123,
         "lat": 35.7134
       },
       "stars": 4
@@ -93,7 +93,7 @@
       "name": "Hotel Markazi Iran",
       "description": "A historical three-star hotel in Tehran, close to major attractions...",
       "location": {
-        "long": 51.4256,
+        "lng": 51.4256,
         "lat": 35.6973
       },
       "stars": 3
@@ -102,7 +102,7 @@
       "name": "Atlas Hotel",
       "description": "Atlas Hotel is a comfortable three-star hotel located near Tehran's city center...",
       "location": {
-        "long": 51.4201,
+        "lng": 51.4201,
         "lat": 35.7128
       },
       "stars": 3
@@ -111,7 +111,7 @@
       "name": "Bolour Hotel",
       "description": "Bolour Hotel is an affordable and cozy three-star hotel in Tehran...",
       "location": {
-        "long": 51.4299,
+        "lng": 51.4299,
         "lat": 35.7103
       },
       "stars": 3
@@ -120,7 +120,7 @@
       "name": "Simorgh Hotel",
       "description": "Simorgh Hotel is a four-star hotel with a great view of Valiasr Street...",
       "location": {
-        "long": 51.4115,
+        "lng": 51.4115,
         "lat": 35.7296
       },
       "stars": 4
@@ -129,7 +129,7 @@
       "name": "Shahr Hotel",
       "description": "Shahr Hotel is an affordable option for travelers looking for a comfortable stay in Tehran...",
       "location": {
-        "long": 51.4867,
+        "lng": 51.4867,
         "lat": 35.7321
       },
       "stars": 3
@@ -138,7 +138,7 @@
       "name": "Aramis Hotel",
       "description": "Aramis Hotel is a modern four-star hotel located in the bustling area of Valiasr Street...",
       "location": {
-        "long": 51.4068,
+        "lng": 51.4068,
         "lat": 35.7255
       },
       "stars": 4
@@ -147,16 +147,16 @@
       "name": "Ramtin Hotel",
       "description": "Ramtin Hotel offers a mix of comfort and business-friendly services in central Tehran...",
       "location": {
-        "long": 51.4164,
+        "lng": 51.4164,
         "lat": 35.7482
       },
       "stars": 4
     },
     {
       "name": "Melal Apartment Hotel",
-      "description": "Melal Apartment Hotel is a great choice for long stays, offering fully equipped apartments...",
+      "description": "Melal Apartment Hotel is a great choice for lng stays, offering fully equipped apartments...",
       "location": {
-        "long": 51.4217,
+        "lng": 51.4217,
         "lat": 35.7633
       },
       "stars": 4
@@ -165,7 +165,7 @@
       "name": "Laleh Hotel",
       "description": "Laleh Hotel is a five-star hotel with a prime location near Laleh Park...",
       "location": {
-        "long": 51.3996,
+        "lng": 51.3996,
         "lat": 35.7079
       },
       "stars": 5
