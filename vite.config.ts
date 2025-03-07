@@ -15,7 +15,7 @@ export default defineConfig({
     VitePWA({
       registerType: "autoUpdate",
       manifest: {
-        name: "بلیط هواپیما | غلامرضا",
+        name: "بلیط هواپیما | علی بابا",
         short_name: "علی بابا",
         description:
           "خرید بلیط هواپیما از علی‌بابا : با سابقه ترین و معتبرترین سامانه رزرو بلیط هواپیما و خرید اینترنتی بلیط هواپیما چارتر و سیستمی، قطار و اتوبوس",
@@ -70,7 +70,5 @@ export default defineConfig({
       },
     }),
   ],
-  build: {
-    ssr: true,
-  },
+
 });
