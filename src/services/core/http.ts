@@ -7,7 +7,7 @@ declare module '@tanstack/react-query' {
 }
 
 const http = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "http://localhost:3003/api",
   timeout: 10 * 1000,
 });
 
@@ -26,7 +26,7 @@ http.interceptors.request.use(
 );
 
 http.interceptors.response.use(
-  (response: AxiosResponse) => response.data,
+  (response: AxiosResponse) => response,
   (error) => {
     return Promise.reject(error);
   },

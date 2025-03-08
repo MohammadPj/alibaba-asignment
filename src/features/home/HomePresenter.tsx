@@ -29,8 +29,6 @@ const HomePresenter: FC = () => {
 
   const debounceSearch = debounce(handleSearch, 1000);
 
-
-
   return (
     <div className={"w-full flex flex-col gap-4"}>
 
