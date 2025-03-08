@@ -11,7 +11,7 @@
     "build:client": "vite build --outDir dist/client",
     "build:server": "vite build --ssr src/entry-server.tsx --outDir dist/server",
     "lint": "eslint .",
-    "preview": "concurrently -c \"blue,green\" \"cross-env NODE_ENV=production node server\" \"json-server src/db/db.json5\""
+    "preview": "cross-env NODE_ENV=production node server"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.10",
