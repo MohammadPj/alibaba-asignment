@@ -3,13 +3,16 @@ import TextField from "../../components/input/TextField.tsx";
 import { debounce } from "~/utils/helpers.ts";
 import { useSearchParams } from "react-router-dom";
 import LoadingComponent from "~/components/loading-components/LoadingComponent.tsx";
+import {useGetHotels} from "~/services/api/hooks.ts";
+import {HotelsMapProps} from "~/features/home/components/hotel-map/HotelsMap.tsx";
 
 const HotelList = lazy(() => import("./components/HotelList.tsx"));
 
 const HomePresenter: FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
+  const {data: hotels} = useGetHotels()
 
-  const [MapComponent, setMapComponent] = useState<FC | null>(null);
+  const [MapComponent, setMapComponent] = useState<FC<HotelsMapProps> | null>(null);
 
   useEffect(() => {
     import("./components/hotel-map/HotelsMap.tsx").then((mod) => setMapComponent(() => mod.default));
@@ -47,7 +50,7 @@ const HomePresenter: FC = () => {
       </div>
 
       <Suspense fallback={<div>loading map</div>}>
-        {MapComponent ? <MapComponent /> : ""}
+        {MapComponent ? <MapComponent hotels={hotels} /> : ""}
       </Suspense>
 
       <Suspense fallback={<LoadingComponent />}>

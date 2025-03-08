@@ -1,4 +1,4 @@
-import "./assets/styles/global.css"
+import "./assets/styles/global.css";
 import { Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import LoadingComponent from "./components/loading-components/LoadingComponent.tsx";
@@ -12,16 +12,9 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<MainLayout />}>
+        <Route index element={<Suspense fallback={<LoadingComponent />}><HomePage /></Suspense>} />
         <Route
-          index
-          element={
-
-              <HomePage />
-
-          }
-        />
-        <Route
-          path=":hotel-id"
+          path=":hotelId"
           element={
             <Suspense fallback={<LoadingComponent />}>
               <HotelDetailPage />

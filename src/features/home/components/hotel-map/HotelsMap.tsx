@@ -2,12 +2,15 @@
 import { FC, useEffect, useState } from "react";
 import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { useGetHotels } from "~/services/api/hooks.ts";
 import HotelMarker from "~/features/home/components/hotel-map/HotelMarker.tsx";
+import {IGetHotel} from "~/services/api/types.ts";
 
-const HotelsMap: FC = () => {
+export interface HotelsMapProps {
+  hotels?: IGetHotel[];
+}
+
+const HotelsMap: FC<HotelsMapProps> = ({hotels}) => {
   const [isClient, setIsClient] = useState<boolean>(false);
-  const { data: hotels } = useGetHotels();
 
   useEffect(() => {
     setIsClient(true);
@@ -17,7 +20,7 @@ const HotelsMap: FC = () => {
     return (
       <div className={"w-full h-50 overflow-hidden"}>
         <MapContainer
-          center={{ lat: 35.7219, lng: 51.3347 }}
+          center={hotels?.[0]?.location || { lat: 35.7219, lng: 51.3347 }}
           style={{
             height: 200,
           }}
